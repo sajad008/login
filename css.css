@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Oswald";
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.Logo {
+    font-size: 3em;
+    color: white;
+    user-select: none;
+    transition-duration: 1s;
+}
+.Logo:hover {
+    transition-duration: 1s;
+    color: rgb(248, 244, 244);
+    font-size: 5em;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/3104624.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation a {
+    position: relative;
+    color: white;
+    font-size: 1.7em;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 100;
+}
+
+.navigation .btn_login {
+    width: 130px;
+    height: 50px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin-left: 40px;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.navigation .btn_login:hover {
+    background-color: white;
+    color: rgb(85, 85, 85);
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.h1-Login{
+    color: aliceblue;
+    margin-top:-50 ;
+    background-color: brown;
+}
+
+.login{
+    border: 1px solid white;
+    color: aliceblue;
+    border-radius: 10px;
+    background:transparent;
+    backdrop-filter: blur(15px);
+    /* width: 25% */
+    /* height: 100%;  */
+    /* text-align: center; */
+    padding: 150px 150px;
+    align-items: center;
+    justify-content:  center;
+    
+}
+.btn-login{
+    padding: 10px 70px;
+    margin: 10px;
+}
+.email{
+    margin: 20px; 
+}
+.user{
+     margin-top: 20px; 
+
+}
+
+.check{
+    margin-left: -110px; 
+    margin-top: 20px; 
+}
+.check-btn{
+    color: aliceblue;
+}
+label{
+    width: 20%;
+    
+}
